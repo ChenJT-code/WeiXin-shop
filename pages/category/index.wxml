@@ -1,0 +1,31 @@
+<!--pages/category/index.wxml-->
+<search/>
+
+<view class="container">
+  <!-- 左侧部分 -->
+  <scroll-view scroll-y="true" class="left-container">
+    <block wx:for="{{fenLei}}" wx:key="cat_id">
+      <view bind:tap="changeIndex" data-index="{{index}}" class="cat_name {{ index === activeIndex ? 'on' : ''}}">
+        <text>{{item.cat_name}}</text>
+      </view>
+    </block>
+  </scroll-view>
+  <!-- 右侧部分 -->
+  <scroll-view scroll-y="true" scroll-top="rightTop" class="right-container">
+    <!-- 外层一级分类 -->
+    <block wx:for="{{fenLei2}}" wx:key="cat_id">
+      <view class="cata-title">
+        {{item.cat_name}}
+      </view>
+     <!-- 里层嵌套商品分类 -->
+      <view class="cata-body">
+      <block wx:for="{{item.children}}" wx:for-item="item2" wx:key="cat_id">
+        <navigator class="cata-body-nav" url="/pages/goods_list/index?query={{item2.cat_name}}&cid={{item2.cat_id}}">
+          <image lazy-load src=" {{item2.cat_icon}} "></image>
+          <text class="cata-text ">{{item2.cat_name}}</text>
+        </navigator>
+      </block> 
+      </view> 
+    </block>
+  </scroll-view>
+</view>

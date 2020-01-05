@@ -1,0 +1,66 @@
+/* pages/category/index.wxss */
+.container {
+  padding: 0rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 26rpx;
+}
+.left-container {
+  width: 200rpx;
+  background-color: #f4f4f4;
+  height: calc(100vh - 100rpx);
+}
+.left-container .cat_name {
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+}
+.left-container .cat_name.on{
+    color: #f00;
+  font-weight: bold;
+  position: relative;
+  background-color: #fff;
+}
+.left-container .cat_name.on::before {
+  content: "";
+  width: 10rpx;
+  position: absolute;
+  left: 0;
+  top: 15rpx;
+  bottom: 15rpx;
+  background-color: #f00;
+}
+.right-container {
+  flex: 1;
+  height: calc(100vh - 100rpx);
+}
+.right-container .cata-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cata-title::after,
+.cata-title::before {
+  content: "/";
+  color: #ccc;
+  margin: 0 10rpx;
+}
+.right-container .cata-body{
+  display: flex;
+  flex-wrap: wrap;
+}
+.right-container .cata-body .cata-body-nav{
+  width: 33%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.right-container .cata-body .cata-body-nav image{
+   width: 70%;
+   height: 126rpx;
+}

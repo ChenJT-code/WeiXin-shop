@@ -1,0 +1,7 @@
+<!--components/search/search.wxml-->
+<navigator class="search" url="/pages/search/index">
+  <view class="search-in">
+    <icon class="search-icon" color="#ccc" type="search"></icon>
+    <text class="search-text">搜索</text>
+  </view>
+</navigator>

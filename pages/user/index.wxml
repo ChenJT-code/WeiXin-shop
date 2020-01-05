@@ -1,0 +1,90 @@
+<!-- pages/user/index.wxml -->
+<!-- <text>pages/user/index.wxml</text> -->
+<view class="user">
+  <view class="login" bind:tap="login">
+    <image class="login-img" src=""></image>
+    <text class="login-text">登录/注册</text>
+  </view>
+  <!-- 菜单栏 -->
+  <view class="headernav">
+    <view class="store nav">
+      <navigator>
+        <text class="store-coust">0</text>
+        <text class="store-content">收藏的店铺</text>
+      </navigator>
+    </view>
+    <view class="goods nav">
+      <navigator>
+        <text class="goods-coust">0</text>
+        <text class="goods-content">收藏的商品</text>
+      </navigator>
+    </view>
+    <view class="focus-store nav">
+      <navigator>
+        <text class="focus-store-coust">0</text>
+        <text class="focus-store-content">关注的店铺</text>
+      </navigator>
+    </view>
+    <view class="footprint nav">
+      <navigator>
+        <text class="footprint-coust">0</text>
+        <text class="footprint-content">我的足迹</text>
+      </navigator>
+    </view>
+  </view>
+  <!-- 我的订单 -->
+  <view class="title">我的订单</view>
+  <view class="myorder">
+    <view class="payment orders">
+      <navigator>
+        <text class="iconfont icon-daifukuan"></text>
+        <text>待付款</text>
+      </navigator>
+    </view>
+    <view class="accept orders">
+      <navigator>
+        <text class="iconfont icon-daishouhuo01"></text>
+        <text>待收货</text>
+      </navigator>
+    </view>
+    <view class="refund orders">
+      <navigator>
+        <text class="iconfont icon-tuikuan"></text>
+        <text>退款/退货</text>
+      </navigator>
+    </view>
+    <view class="all-order orders">
+      <navigator>
+        <text class="iconfont icon-quanbudingdan"></text>
+        <text>全部订单</text>
+      </navigator>
+    </view>
+  </view>
+  <!-- 收货地址管理 -->
+  <view class="address">
+    <navigator>
+      <text>收货地址管理</text>
+      <text class="icon-jiantou iconfont"></text>
+    </navigator>
+  </view>
+  <view class="kefu">
+    <navigator>
+      <text>联系客服</text>
+      <text class="iconfont">400-618-4000</text>
+    </navigator>
+    <navigator>
+      <text>意见反馈</text>
+      <text class="icon-jiantou iconfont"></text>
+    </navigator>
+    <navigator>
+      <text>关于我们</text>
+      <text class="icon-jiantou iconfont"></text>
+    </navigator>
+  </view>
+  <view class="fenxiang">
+    <navigator>
+      <text>把应用推荐给其他人</text>
+      <text class="icon-jiantou iconfont"></text>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,118 @@
+/* pages/user/index.wxss */
+.user {
+  width: 750rpx;
+  position: relative;
+  background-color: lightblue;
+}
+.user .login {
+  width: 750rpx;
+  height: 400rpx;
+  background-color: #eb4450;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.user .login .login-img {
+  width: 128rpx;
+  height: 128rpx;
+  border: 3rpx solid #fff;
+  border-radius: 50%;
+}
+.user .login .login-text {
+  color: #fff;
+}
+.user .headernav {
+  background-color: #fff;
+  position: absolute;
+  top: 370rpx;
+  left: 15rpx;
+  width: 720rpx;
+  height: 120rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.user .headernav .nav navigator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user .title {
+  margin: 116rpx 15rpx 15rpx 15rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 36rpx;
+  padding-left: 25rpx;
+  background-color: #fff;
+}
+.user .myorder {
+  margin: 0 15rpx;
+  height: 165rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+.user .myorder .orders navigator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.user .myorder .orders navigator .iconfont {
+  font-size: 60rpx;
+  color: red;
+  font-weight: bold;
+}
+.user .address {
+  margin: 0 15rpx;
+  margin-top: 15rpx;
+  height: 85rpx;
+  background-color: #fff;
+  line-height: 85rpx;
+}
+.user .address navigator {
+  display: flex;
+  justify-content: space-between;
+  margin: 0rpx 25rpx;
+}
+.user .address navigator .iconfont {
+  color: #808080;
+}
+.user .kefu {
+  margin: 0 15rpx;
+  margin-top: 15rpx;
+  background-color: #fff;
+}
+.user .kefu navigator {
+  height: 85rpx;
+  line-height: 85rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: 0rpx 25rpx ;
+  border-bottom: 3rpx solid #888;
+}
+.user .kefu navigator:last-child {
+  border-bottom: none;
+}
+.user .kefu navigator .iconfont {
+  color: #8b8b8b;
+}
+.user .fenxiang {
+  margin: 0 15rpx;
+  background-color: #fff;
+  margin-top: 25rpx;
+}
+.user .fenxiang navigator {
+  height: 85rpx;
+  line-height: 85rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: 0rpx 25rpx ;
+}
+.user .fenxiang navigator .iconfont {
+  color: #808080;
+}

@@ -1,0 +1,55 @@
+/**index.wxss**/
+
+/* 轮播图样式 */
+
+swiper {
+  height: 340rpx;
+}
+
+switch image {
+  width: 750rpx;
+}
+
+/* 分类菜单样式 */
+
+.navigation {
+  display: flex;
+  height: 191rpx;
+  align-items: center;
+}
+
+.navigation-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-item image {
+  width: 138rpx;
+  height: 138rpx;
+}
+
+/* 楼层样式 */
+
+.floor-title image {
+  width: 750rpx;
+}
+
+
+.product_list  image {
+  width: 232rpx;
+  float: left;
+  padding-left: 15rpx;
+}
+
+.navImg image {
+  width: 232rpx;
+  height: 192rpx;
+  margin-bottom: 10rpx;
+}
+
+.navImg:nth-child(1) image {
+  width: 232rpx;
+  height: 390rpx;
+  margin-bottom: none;
+}

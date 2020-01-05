@@ -1,0 +1,21 @@
+<view class="top">
+  <view class="top-text">综合</view>
+  <view class="top-text">销量</view>
+  <view class="top-text">价格</view>
+  <!-- <view class="iconfont icon-up"></view>
+  <view class="iconfont icon-down"></view> -->
+</view>
+<!-- 商品列表 -->
+<view class="leiBiao">
+  <block wx:for="{{leiBiao}}" wx:key="goods_id">
+      <navigator url="/pages/goods_detail/index?goods_id={{ item.goods_id }}" class="leiBiao-item">
+        <view class="leiBiao-left">
+          <image class="goods-logo" src="{{item.goods_small_logo || '/images/fail.svg'}}" mode="widthFix" lazy-load="false"></image>
+        </view>
+        <view class="leiBiao-right" hover-class="none" hover-stop-propagation="false">
+            <view class="goods-name">{{item.goods_name}}</view>
+           <view class="goods-price">{{item.goods_price}}</view>
+        </view>
+      </navigator>
+  </block>
+</view>
