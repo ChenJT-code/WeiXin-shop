@@ -20,19 +20,19 @@ Page({
   },
 
   //列表项的选择按钮点击
-  // changeCheck(event){
-  //   console.log(event);
-  //   //解构事件的参数
-  //   const { index } = event.currentTarget.dataset;
-  //   // 解构购物车的数组
-  //   const { cartList } = this.data;
-  //   // 通过索引值找到数据，把自己取反
-  //   cartList[index].goods_selected = !cartList[index].goods_selected;
-  //   this.setData({
-  //     cartList
-  //   });
-  //   wx.setStorageSync('cartList', cartList);
-  // },
+  changeCheck(event){
+    console.log(event);
+    //解构事件的参数
+    const { index } = event.currentTarget.dataset;
+    // 解构购物车的数组
+    const { cartList } = this.data;
+    // 通过索引值找到数据，把自己取反
+    cartList[index].goods_selected = !cartList[index].goods_selected;
+    this.setData({
+      cartList
+    });
+    wx.setStorageSync('cartList', cartList);
+  },
  
   // 全选按钮点击事件
   changeCheckAll(){
