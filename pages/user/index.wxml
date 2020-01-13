@@ -1,8 +1,12 @@
-<!-- pages/user/index.wxml -->
-<!-- <text>pages/user/index.wxml</text> -->
+<block wx:if="{{ !token }}">
+  <button open-type="getUserInfo" bind:getuserinfo="getToken">微信授权登录</button>
+</block>
+
+
+<block wx:else>
 <view class="user">
   <view class="login" bind:tap="login">
-    <image class="login-img" src=""></image>
+    <image class="login-img" src="{{ userInfo.avatarUrl }}"></image>
     <text class="login-text">登录/注册</text>
   </view>
   <!-- 菜单栏 -->
@@ -88,3 +92,4 @@
     </navigator>
   </view>
 </view>
+</block>

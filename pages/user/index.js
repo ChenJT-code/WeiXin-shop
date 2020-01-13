@@ -1,66 +1,62 @@
-// pages/user/index.js
-Page({
+const app =  getApp();
 
-  /**
-   * 页面的初始数据
-   */
+Page({
+  data:{
+    userInfo:{},
+    token:""
+  },
+  onShow(){
+     this.setData({
+       userInfo: wx.getStorageSync("userInfo") || {},
+       token: wx.getStorageSync("token") || ""
+     })
+  },
+  //获取用户信息
+  getToken(event){
+   console.log(event);
+   const { encryptedData,iv,rawData,signature,userInfo } = event.detail;
+  wx.login({
+    success: (result)=>{
+      console.log(result);
+      const { code } = result;
+
+      app.myAxios({
+        url:'users/wxlogin',
+        method:'post',
+        data:{
+          encryptedData,
+          iv,
+          rawData,
+          signature,
+          code
+        }
+      }).then(res=>{
+        if(res){
+          wx.setStorageSync('token', res.token);
+          wx.setStorageSync('userInfo', userInfo );
+          this.setData({
+            token: wx.getStorageSync("token"),
+            userInfo
+          })
+          wx.showToast({
+            title: '登陆成功',
+            icon: 'none',
+          });
+        }else{
+          wx.showToast({
+            title: '登陆失败，请重试',
+            icon: 'none',
+          });
+        }
+      })
+    },
+
+  });
+
+  },
+
   data: {
 
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
   }
+
 })
