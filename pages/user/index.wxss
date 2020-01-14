@@ -2,7 +2,7 @@
 .user {
   width: 750rpx;
   position: relative;
-  background-color: lightblue;
+  background-color: #f4f4f4;
 }
 .user .login {
   width: 750rpx;

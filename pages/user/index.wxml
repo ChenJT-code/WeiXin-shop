@@ -7,7 +7,7 @@
 <view class="user">
   <view class="login" bind:tap="login">
     <image class="login-img" src="{{ userInfo.avatarUrl }}"></image>
-    <text class="login-text">登录/注册</text>
+    <text class="login-text">{{ userInfo.nickName}}</text>
   </view>
   <!-- 菜单栏 -->
   <view class="headernav">
