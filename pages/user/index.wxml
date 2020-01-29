@@ -47,13 +47,13 @@
     </view>
     <view class="accept orders">
       <navigator>
-        <text class="iconfont icon-daishouhuo01"></text>
+        <text class="iconfont icon-daishouhuo"></text>
         <text>待收货</text>
       </navigator>
     </view>
     <view class="refund orders">
       <navigator>
-        <text class="iconfont icon-tuikuan"></text>
+        <text class="iconfont .icon-refund"></text>
         <text>退款/退货</text>
       </navigator>
     </view>
