@@ -48,11 +48,5 @@
       <view class="total-down">包含运费</view>
     </view>
   </view>
-  <view class="bar-btn" bindtap="goToPay" >支付{{ totalCount }}</view>
-</view>
-
-<!-- 空购物车处理 -->
-<view class="empty-cart" wx:if="{{ cartList.length === 0 }}">
-  <image class="empty-cart-image" src="/images/konggouwuche.svg"></image>
-  <navigator  class="empty-cart-btn" url="/pages/index/index" open-type="switchTab">你还没有添加任何商品</navigator>
+  <view class="bar-btn" bindtap="pay" >支付{{ totalCount }}</view>
 </view>
