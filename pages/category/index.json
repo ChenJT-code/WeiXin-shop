@@ -3,7 +3,7 @@
     "search": "/components/search/search"
   },
       "backgroundTextStyle": "light",
-      "navigationBarBackgroundColor": "#eb4450",
+      "navigationBarBackgroundColor": "#2F4F4F",
       "navigationBarTitleText": "分类",
       "navigationBarTextStyle": "white"
 }

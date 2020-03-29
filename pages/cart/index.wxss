@@ -73,7 +73,7 @@ page {
 }
 
 .product-price {
-  color: #eb4450;
+  color: #2F4F4F;
   font-size: 34rpx;
 }
 
@@ -124,7 +124,7 @@ page {
   padding: 0 20rpx;
 }
 .total-price {
-  color: #eb4450;
+  color: #2F4F4F;
 }
 .total-price::before {
   content: "￥";

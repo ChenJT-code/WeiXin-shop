@@ -1,6 +1,7 @@
 /* components/search/search.wxss */
 .search{
-  background-color: #eb4450;
+  /* background-color: #eb4450; */
+  background-color: 	#2F4F4F	;
   padding: 20rpx 16rpx;
 }
 .search-in{

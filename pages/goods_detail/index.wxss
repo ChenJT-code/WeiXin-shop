@@ -12,7 +12,7 @@
   }
   
   .goods-price {
-    color: #eb4450;
+    color: #2F4F4F;
     font-size: 50rpx;
     margin: 10rpx 20rpx;
   }

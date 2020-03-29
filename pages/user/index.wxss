@@ -7,7 +7,7 @@
 .user .login {
   width: 750rpx;
   height: 400rpx;
-  background-color: #eb4450;
+  background-color: #2F4F4F;
   display: flex;
   justify-content: center;
   align-items: center;
